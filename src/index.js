@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components"
 
 const lightmode = {
   backgroundColor: "whitesmoke",
-  color: "#112",
+  color: "#111",
 }
 
 const darkmode = {
