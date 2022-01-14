@@ -1,10 +1,24 @@
 import React from "react";
+import styled from "styled-components";
 
-function App() {
+const Wrapper = styled.div `
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: ${(props) => props.theme.backgroundColor};
+`;
+
+const Title = styled.h1 `
+  font-size: 30px;
+  color: ${(props) => props.theme.color};
+`;
+
+const App = () => {
   return (
-   <div>
-     <h1>Welcome back</h1>
-   </div>
+   <Wrapper>
+     <Title>Welcome back</Title>
+   </Wrapper>
   );
 }
 
